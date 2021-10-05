@@ -58,6 +58,20 @@ const resolvers = {
       return mycategories.find((category) => category.slug === itemSlug);
     },
   },
+
+  Category: {
+    gifts: (parent, args, ctx) => {
+      // console.log(parent); //{ id: '1', image: 'url', category: 'food', slug: 'food' }
+      return mygifts.filter((gift) => gift.category === parent.id);
+    },
+  },
+
+  Gift: {
+    category: (parent, args, ctx) => {
+      //console.log(parent); //return all the gifts
+      return mycategories.find((category) => category.id === parent.category);
+    },
+  },
 };
 
 const server = new ApolloServer({ typeDefs, resolvers });

@@ -25,7 +25,7 @@ const mygifts = [
     description: ["shiny sticker", "customizable"],
     inStock: 15,
     onSale: false,
-    category: "4", // should match the category id
+    category: "1", // should match the category id
   },
   {
     id: "22",
@@ -49,7 +49,7 @@ const mygifts = [
     description: ["comfy hoodie", "waterproof"],
     inStock: 35,
     onSale: false,
-    category: "3",
+    category: "2",
   },
 ];
 const mybooks = [
