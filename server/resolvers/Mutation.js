@@ -38,6 +38,12 @@ const Mutation = {
       return true;
     }
   },
+
+  // updateGift
+  updateGift: (parent, { id, title, description }, { mygifts }) => {
+    console.log(id);
+    // implement this functino your self
+  },
 };
 
 module.exports = Mutation;

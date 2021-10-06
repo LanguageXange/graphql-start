@@ -54,6 +54,17 @@ const typeDefs = gql`
     ): Gift
 
     removeGift(id: ID!): Boolean
+    updateGift(
+      id: ID!
+      title: String
+      image: String
+      rating: Float
+      price: String
+      description: [String!]
+      inStock: Int
+      onSale: Boolean
+      category: String
+    ): Boolean
   }
 `;
 module.exports = typeDefs;
